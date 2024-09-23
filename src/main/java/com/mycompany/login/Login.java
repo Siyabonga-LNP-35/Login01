@@ -20,7 +20,7 @@ public class Login {
     private final String username;
     private final String password;
 
-      // initialize user details
+    // Prompt user for information
     public Login(String firstName, String lastName, String username, String password) {
         this.firstName = firstName;
         this.lastName = lastName;

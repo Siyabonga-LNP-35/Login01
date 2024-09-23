@@ -18,7 +18,7 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
          Scanner sc = new Scanner(System.in);
-        // Registration
+        // Registration of the user and Prompt user for information
         System.out.println("Enter your first name:");
         String firstName = sc.nextLine();
         
@@ -37,13 +37,13 @@ public class Main {
         System.out.println(registrationMessage);
         
         if (registrationMessage.equals("Username and password successfully captured.")) {
-            // Login
+            // know the user can Login
             System.out.println("Enter your username to log in:");
             String enteredUsername = sc.nextLine();
             
             System.out.println("Enter your password:");
             String enteredPassword = sc.nextLine();
-            
+            //user successfully loggedIn
             boolean isLoggedIn = user.loginUser(enteredUsername, enteredPassword);
             System.out.println(user.returnLoginStatus(isLoggedIn));
               
